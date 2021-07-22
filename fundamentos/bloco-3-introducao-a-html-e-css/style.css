@@ -1,0 +1,30 @@
+h1 {
+    font-family:sans-serif ;
+    color: orange;
+    font-size:65px
+}
+.modifica-color {
+    background-color:green;
+    line-height:35px;
+} 
+p {
+  text-align:center;
+  font-weight: 600;
+  font-size: 3em;
+}
+body {
+  font-style: oblique;
+  font-size:16px;
+}
+ul {
+  text-decoration: underline;
+}
+#amarelo {
+  color: yellow;
+}
+#vermelho {
+  color: red;
+}
+#marrom {
+  color: brown;
+}
