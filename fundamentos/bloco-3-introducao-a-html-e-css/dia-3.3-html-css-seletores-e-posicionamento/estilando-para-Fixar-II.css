@@ -1,0 +1,35 @@
+div:hover .vermelho {
+    font-style: italic;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 15px;
+    max-width: 200px;
+}
+div:hover .verde {
+    background-color: greenyellow;
+    padding: 5px 10px;
+    border-radius: 15px;
+    max-width: 200px;
+}
+div:hover .purple {
+    font-style: italic;
+    font-size: 50px;
+    background-color: purple;
+    padding: 5px 15px;
+    border-radius: 15px;
+    max-width: 500px;
+}
+div:hover .black {
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 15px;
+    max-width: 200px;
+}
+div:hover .clear-color {
+    font-style: italic;
+    background-color: #B2E6FF;
+    padding: 5px 10px;
+    border-radius: 15px;
+    max-width: 200px;
+}
