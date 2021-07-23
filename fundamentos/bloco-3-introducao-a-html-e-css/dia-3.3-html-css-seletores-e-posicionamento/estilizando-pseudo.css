@@ -8,3 +8,6 @@ li:hover {
 li:active {
     font-size: 25px;
 }
+ul, ol {
+    list-style: none;
+}
