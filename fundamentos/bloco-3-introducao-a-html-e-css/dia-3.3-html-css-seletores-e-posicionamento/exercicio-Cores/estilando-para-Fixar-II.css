@@ -1,17 +1,17 @@
-div:hover .vermelho {
+div:hover  {
     font-style: italic;
     background-color: red;
     padding: 5px 10px;
     border-radius: 15px;
     max-width: 200px;
 }
-div:hover .verde {
+div:hover  {
     background-color: greenyellow;
     padding: 5px 10px;
     border-radius: 15px;
     max-width: 200px;
 }
-div:hover .purple {
+div:hover  {
     font-style: italic;
     font-size: 50px;
     background-color: purple;
@@ -19,14 +19,14 @@ div:hover .purple {
     border-radius: 15px;
     max-width: 500px;
 }
-div:hover .black {
+div:hover  {
     color: white;
     background-color: black;
     padding: 5px 10px;
     border-radius: 15px;
     max-width: 200px;
 }
-div:hover .clear-color {
+div:hover  {
     font-style: italic;
     background-color: #B2E6FF;
     padding: 5px 10px;
