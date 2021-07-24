@@ -20,11 +20,25 @@ h1.header {
 }
 ul.firstList li.pink {
     background-color: rgb(240, 145, 240);
+    max-width: 110px;
+    border-radius: 6px;
 }
 ul.firstList li:nth-of-type(-n+3) {
     color: blue
 }
-#orange:hover {
-    text-decoration: none;
+.orange:hover {
+    font-weight: bold;
     color: orange;
+}
+.green:hover {
+    font-weight: bold;
+    color: rgb(54, 214, 14);
+}
+.black:hover {
+    font-weight: bold;
+    color: black;
+}
+.yellow:hover {
+    font-weight:bold;
+    color: yellow;
 }
