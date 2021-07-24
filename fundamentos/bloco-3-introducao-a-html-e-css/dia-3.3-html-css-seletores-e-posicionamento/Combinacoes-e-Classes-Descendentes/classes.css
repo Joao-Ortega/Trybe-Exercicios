@@ -18,3 +18,13 @@ h1.header {
     font-size: 40px;
     border: solid black 1px;
 }
+ul.firstList li.pink {
+    background-color: rgb(240, 145, 240);
+}
+ul.firstList li:nth-of-type(-n+3) {
+    color: blue
+}
+#orange:hover {
+    text-decoration: none;
+    color: orange;
+}
