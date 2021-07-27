@@ -1,0 +1,102 @@
+header {
+    border-top: solid blue;
+    border-left: solid blue;
+    border-right: solid blue;
+    padding-bottom: 1px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+h3 {
+    text-align:center
+}
+nav {
+    border: solid blue;
+    padding-top:1px ;
+    background-color: black;
+}
+.link-none {
+    color: white;
+    text-decoration: none;
+}
+.link-none:hover {
+    font-size: 20px;
+    color: blue;
+}
+.first-list li {
+    display: inline;
+    margin-right: 3%;
+}
+.section {
+    display: inline-block;
+    max-width: 50%;
+    font-size: 22px;
+    text-align: justify;
+}
+.aside {
+    text-align: center;
+    float: right;
+    margin-top: 2%;
+    margin-right: 15%;
+    font-size: 150%;
+    line-height: 80px;
+    border: solid;
+    width: 500px;
+}
+.aside2 {
+    position: absolute;
+    margin-top: 18%;
+    margin-left: 6%;
+    display: inline-block;
+}
+#link-none2 {
+    font-size: 20px;
+    background-color: black;
+    border: solid;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 8px;
+}
+.list-config {
+    text-align: justify;
+}
+ ul ::marker {
+    color: white;
+}
+.vision {
+    text-align: justify;
+    display: inline-block;
+    font-size: 22px;
+    max-width: 28%;
+}
+.punch {
+    text-align: justify;
+    display: inline-block;
+    font-size: 22px;
+    max-width: 20%;
+    margin-left: 5%;
+}
+img.vision-color  {
+    float:left;
+    width: 40%;
+}
+img.image-punch {
+    float: left;
+    width: 60%;
+    height: 195px;
+}
+.footer {
+    font-style: italic;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: solid blue;
+}
+
+
+
+
+
+
+
