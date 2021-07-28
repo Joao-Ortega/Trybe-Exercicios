@@ -44,7 +44,7 @@ else {
 
 //Exercício número 4.
 
-let number = -5;
+/*let number = -5;
 if(number > 0) {
     console.log("positive");
 }
@@ -53,6 +53,20 @@ else if(number < 0){
 }
 else {
     console.log("zero");
+}*/
+
+//Exercício número 5.
+
+let angle1 = 58;
+let angle2 = 26;
+let angle3 = 96;
+let somaDosAngle = angle1+angle2+angle3;
+if(somaDosAngle == 180) {
+    console.log(true);
+} else if(somaDosAngle > 180 || somaDosAngle >= 0) {
+    console.log(false);
+} else {
+    console.log("Error invalid value");
 }
 
 
