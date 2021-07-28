@@ -29,7 +29,7 @@ else {
 
 //Exercício número 3.
 
-let number1 = 276;
+/*let number1 = 276;
 let number2 = 25;
 let number3 = 971;
 if(number1 > number2 && number1 > number3) {
@@ -40,5 +40,19 @@ else if(number2 > number1 && number2 > number3) {
 }
 else {
     console.log(number3);
+}*/
+
+//Exercício número 4.
+
+let number = -5;
+if(number > 0) {
+    console.log("positive");
 }
+else if(number < 0){
+    console.log("negative");
+}
+else {
+    console.log("zero");
+}
+
 
