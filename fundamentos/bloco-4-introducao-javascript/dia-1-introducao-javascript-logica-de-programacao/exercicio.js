@@ -71,7 +71,7 @@ if(somaDosAngle == 180) {
 
 //Exercício número 6.
 
-var xadrezPeca = (prompt("Digite uma peça de xadrez(pt-br)", ""));
+/*let xadrezPeca = (prompt("Type a chess piece", ""));
 if(xadrezPeca.toLowerCase() == "pawn") {
     console.log("Pawn -> Foward only 1 block, Diagonal if there's a piece to capture");
 } else if(xadrezPeca.toLowerCase() == "rook") {
@@ -86,4 +86,24 @@ if(xadrezPeca.toLowerCase() == "pawn") {
     console.log("King -> Moves in any direction but just one block at time");
 } else {
     console.log("Error invalid Piece")
-}
+}*/
+
+//Exercício número 7.
+
+let note = Number(prompt("Digite uma nota de 0 a 100", ""));
+
+    if(note >= 90 && note <=100) {
+        console.log("A");
+    } else if(note >= 80 && note < 90){
+        console.log("B");
+    } else if(note >= 70 && note <80){
+        console.log("C");
+    } else if(note >= 60 && note < 70){
+        console.log("D");
+    } else if(note >= 50 && note<60){
+        console.log("C");
+    } else if(note >= 0 && note <50){
+        console.log("F");
+    } else {
+        console.log("Type a note between 0 and 100");
+    }
