@@ -90,7 +90,7 @@ if(xadrezPeca.toLowerCase() == "pawn") {
 
 //Exercício número 7.
 
-let note = Number(prompt("Digite uma nota de 0 a 100", ""));
+/*let note = Number(prompt("Digite uma nota de 0 a 100", ""));
 
     if(note >= 90 && note <=100) {
         console.log("A");
@@ -106,4 +106,15 @@ let note = Number(prompt("Digite uma nota de 0 a 100", ""));
         console.log("F");
     } else {
         console.log("Type a note between 0 and 100");
+    }*/
+
+    //Exercício número 8.
+
+    let number1 = 49;
+    let number2 = 11;
+    let number3 = 91;
+    if(number1 % 2 !== 0 || number2 % 2 !==0 || number3 % 2 !==0){
+        console.log(true);
+    } else{
+        console.log(false);
     }
