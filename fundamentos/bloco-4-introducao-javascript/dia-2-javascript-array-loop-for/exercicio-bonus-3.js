@@ -1,15 +1,14 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let arrayNumerosMultiplicados = [];
+let index = 0;
 
-for(let index = 0; index < numbers.length; index += 1) {
     for(var secondIndex = 1; secondIndex < numbers.length; secondIndex += 1) {
         arrayNumerosMultiplicados.push(numbers[index] * numbers[secondIndex]);
         index += 1;
     }
     if(secondIndex >= numbers.length) {
         arrayNumerosMultiplicados.push(numbers[index] * 2);
-    }
-} console.log(arrayNumerosMultiplicados);
+    } console.log(arrayNumerosMultiplicados);
 
 //Percorrer o array numbers pegando a primeira posição;
 //Percorrer o array numbers pegando a segunda posição;
