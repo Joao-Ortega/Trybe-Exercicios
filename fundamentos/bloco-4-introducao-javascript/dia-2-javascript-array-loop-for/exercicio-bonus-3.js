@@ -1,10 +1,9 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let arrayNumerosMultiplicados = [];
 
-for(let index = 0; index < numbers.length; index += 1) {
+for(let index = 0; index < numbers.length; index += 2) {
     for(var secondIndex = 1; secondIndex < numbers.length; secondIndex += 1) {
         arrayNumerosMultiplicados.push(numbers[index] * numbers[secondIndex]);
-        index += 1;
     }
     if(secondIndex >= numbers.length) {
         arrayNumerosMultiplicados.push(numbers[index] * 2);
