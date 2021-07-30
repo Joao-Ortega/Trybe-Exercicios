@@ -11,7 +11,6 @@ for(let index = 0; index < numbers.length; index += 1) {
     }
 } console.log(arrayNumerosMultiplicados);
 
-
 //Percorrer o array numbers pegando a primeira posição;
 //Percorrer o array numbers pegando a segunda posição;
 //Multiplicar a primeira posição com a segunda e armazenar com .push no novo array;
