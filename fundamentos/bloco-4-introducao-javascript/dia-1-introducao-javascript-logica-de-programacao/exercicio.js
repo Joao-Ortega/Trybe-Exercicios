@@ -57,15 +57,18 @@ else {
 
 //Exercício número 5.
 
-/*let angle1 = 58;
+/*let angle1 = -58;
 let angle2 = 26;
 let angle3 = 96;
 let somaDosAngle = angle1+angle2+angle3;
-if(somaDosAngle == 180) {
+let anglesPositive = angle1 > 0 && angle2 > 0 && angle3 > 0;
+if(anglesPositive)
+    if(somaDosAngle == 180) {
     console.log(true);
-} else if(somaDosAngle > 180 || somaDosAngle >= 0) {
+    } else {
     console.log(false);
-} else {
+} 
+else {
     console.log("Error invalid value");
 }*/
 
@@ -110,11 +113,11 @@ if(xadrezPeca.toLowerCase() == "pawn") {
 
     //Exercício número 8.
 
-    let number1 = 49;
+    /*let number1 = 49;
     let number2 = 11;
     let number3 = 91;
     if(number1 % 2 !== 0 || number2 % 2 !==0 || number3 % 2 !==0){
         console.log(true);
     } else{
         console.log(false);
-    }
+    }*/
