@@ -55,9 +55,7 @@
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
   function twoYearsFromNow() {
-document.getElementsByTagName("p")[0].innerHTML = "Programador Nato";
 document.getElementsByTagName("p")[1].innerHTML = "Contratado por empresa Americana";
-document.getElementsByTagName("p")[2].innerHTML = "Ganhando bem";
 } 
 twoYearsFromNow();
   function yellowToGreen() {
@@ -73,11 +71,16 @@ document.getElementsByClassName("title")[0].innerHTML = "Exercício 5.1 - JavaSc
 } 
 titleCorrect();
 function upperLetters() {
-document.getElementsByTagName("p")[0].style.textTransform = "uppercase";
+let changingToUpperCase = document.getElementsByTagName("p");
+for(let index of changingToUpperCase) {
+  index.innerText = index.innerText.toUpperCase();
 } 
-upperLetters();
+} upperLetters(); 
 function showAllpTags () {
-console.log(document.getElementsByTagName("p"));
+let printing = document.getElementsByTagName("p");
+for(let index of printing) {
+  console.log(index.innerText);
+}
 }
 showAllpTags();
 
