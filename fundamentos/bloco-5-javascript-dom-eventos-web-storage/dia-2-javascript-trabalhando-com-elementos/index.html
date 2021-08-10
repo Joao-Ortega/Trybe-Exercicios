@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="paiDoPai">
+        <section id="pai">
+          <section id="primeiroFilho"></section>
+          <section id="elementoOndeVoceEsta">
+            <section id="primeiroFilhoDoFilho"></section>
+            <section id="segundoEUltimoFilhoDoFilho"></section>
+          </section>
+          Atenção!
+          <section id="terceiroFilho"></section>
+          <section id="quartoEUltimoFilho"></section>
+        </section>
+      </main>
+<script>
+  /*Parte I*/
+    document.querySelector('#elementoOndeVoceEsta').parentNode.style.color = "green";
+    document.getElementById('primeiroFilhoDoFilho').innerText = "João Pedro Ortega";
+    document.getElementById('pai').firstElementChild;
+    document.getElementById('elementoOndeVoceEsta').previousElementSibling;
+    document.getElementById('elementoOndeVoceEsta').nextSibling;
+    document.getElementById('elementoOndeVoceEsta').nextElementSibling;
+    document.getElementById('pai').children[2];
+  /*Parte II*/
+  //Criando um irmão para elementoOndeVoceEsta
+  let irmaoDoElemento = document.createElement('section');
+  irmaoDoElemento.id = 'irmaoDoElementoOndeVoceEsta';
+  let pai = document.getElementById('pai');
+  pai.appendChild(irmaoDoElemento);
+  //Criando um filho para elementoOndeVoceEsta
+  let elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+  let filhoDoElementoOndeVoceEsta = document.createElement('section');
+  filhoDoElementoOndeVoceEsta.id = 'filhoDoOndeVoceEsta';
+  elementoOndeVoceEsta.appendChild(filhoDoElementoOndeVoceEsta);
+  //Criando um filho para primeiroFilhoDoFilho
+  let primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+  let filhoDoFilho = document.createElement('section');
+  filhoDoFilho.id = 'filhoDoPrimeiroFilhoDoFilho';
+  primeiroFilhoDoFilho.appendChild(filhoDoFilho);
+  //Acessando terceiro filho a partir do filho criado
+  document.getElementById('filhoDoPrimeiroFilhoDoFilho').parentNode.parentNode.nextElementSibling;
+</script>
+</body>
+</html>
