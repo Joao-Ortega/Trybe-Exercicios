@@ -57,10 +57,9 @@
   </head>
   <body>
     <script>
-        /* Número 1 */
+  /* Número 1 */
     let h1 = document.createElement('h1');
     h1.innerHTML = 'Exercícios 5.2 - JavaScript DOM';
-    h1.id = 'title';
     let body = document.getElementsByTagName('body')[0];
     body.appendChild(h1);
     /* Número 2*/
@@ -103,6 +102,23 @@
         h3 = document.createElement('h3');
         main.appendChild(h3);
     }
+    /* Parte II Número 1*/
+    h1.className = 'title';
+    /* Número 2 */
+    for(let index = 0; index < 3; index += 1) {
+        h3 = document.getElementsByTagName('h3');
+        h3[index].className = 'description';
+    }
+    /* Número 3 */
+    main.removeChild(section2);
+    /* Número 4 */
+    section3.style.marginRight = 'auto';
+    /* Número 5 */
+    section.parentNode.style.backgroundColor = 'green';
+    /* Número 6 */
+    ul.lastElementChild.remove();
+    ul.lastElementChild.remove();  
+    
 </script>
   </body>
 </html>
