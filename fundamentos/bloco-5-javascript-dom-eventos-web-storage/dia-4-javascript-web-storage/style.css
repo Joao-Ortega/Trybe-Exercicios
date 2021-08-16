@@ -1,0 +1,41 @@
+#title {
+    text-align: center;
+    font-size: 80px;
+}
+
+#sub-title {
+  text-align: center;
+  font-style: italic;
+}
+
+#section1 {
+  float: left;
+  width: 1100px;
+  text-align: left;
+  margin-left: 35px;
+}
+
+#section2 {
+  float: right;
+  width: 1100px;
+  text-align: right;
+  margin-right: 35px;
+}
+
+.paragraphs {
+text-align: justify;
+font-size: 23px;
+}
+
+.input {
+margin: 55px 0px 0px 20px;
+font-size: 18px;
+}
+
+.buttons {
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  font-weight:bold;
+}
+
