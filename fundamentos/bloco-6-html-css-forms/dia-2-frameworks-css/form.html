@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="materialize/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
@@ -15,35 +16,35 @@
   <fieldset>
     <i class="material-icons prefix">account_circle</i>
     <label for="icon-prefix" class="blue-text text-darken-2 container card-panel hoverable fs-4">Nome Completo:
-      <input id="icon-prefix" type="text" name=" nome : " maxlength="40" required></label>
+      <input class="inputs" id="icon-prefix" type="text" name=" nome : " maxlength="45" required ></label>
     <br>
     <br>
     <i class="material-icons prefix">email</i>
     <label for="icon-email" class="blue-text text-darken-2 container card-panel hoverable fs-4">Email:
-      <input id="icon-email" type="text" name=" email : " maxlength="50" required></label>
+      <input class="inputs" id="icon-email" type="text" name=" email : " maxlength="50" required></label>
     <br>
     <br>
     <i class="material-icons prefix">confirmation_number</i>
     <label for="icon-number" class="blue-text text-darken-2 container card-panel hoverable fs-4">CPF:
-      <input id="icon-number" type="text" name=" cpf : " maxlength="11" required></label>
+      <input class="inputs" id="icon-number" type="text" name=" cpf : " maxlength="11" required></label>
     <br>
     <br>
     <i class="material-icons prefix">domain</i>
     <label for="icon-domain" class="blue-text text-darken-2 container card-panel hoverable fs-4">Endereço:
-      <input id="icon-domain" type="text" name=" endereço : " maxlength="200" required></label>
+      <input class="inputs" id="icon-domain" type="text" name=" endereço : " maxlength="200" required></label>
     <br>
     <br>
     <i class="material-icons prefix">landscape</i>
     <label for="icon-landscape" class="blue-text text-darken-2 container card-panel hoverable fs-4">Cidade:
-      <input id="icon-landscape" type="text" name=" cidade : " maxlength="28" required></label>
+      <input class="inputs" id="icon-landscape" type="text" name=" cidade : " maxlength="28" required></label>
     <label class="blue-text text-darken-2 container card-panel hoverable fs-4">Estado:<select class="form-select" aria-label="Default select example" id="allStates">
     </select></label>
     <br>
     <br>
     <label for="house" class="container card-panel hoverable waves-effect waves-light btn-small fs-4">
-      <input id="house" type="radio" required name="group1" checked value="casa" class="form-check-input ">Casa</label>
+      <input class="inputs" id="house" type="radio" required name="group1" checked value="casa" class="form-check-input ">Casa</label>
     <label for="apartment" class="container card-panel hoverable waves-e ffect waves-light btn-small fs-4">
-      <input id="apartment" type="radio" required name="group1" value="apartamento">Apartamento</label>
+      <input class="inputs" id="apartment" type="radio" required name="group1" value="apartamento">Apartamento</label>
   </fieldset>
   <br>
   <br>
@@ -56,20 +57,20 @@
       <br>
       <i class="material-icons prefix">work</i>
       <label for="icon-work" class="blue-text text-darken-2 container card-panel hoverable fs-4">Cargo
-        <input id="icon-work" type="text" maxlength="40" required name=" cargo ="></label>
+        <input class="inputs" id="icon-work" type="text" maxlength="40" required name=" cargo ="></label>
       <br>
       <br>
       <i class="material-icons prefix">textsms</i>
       <label for="icon-textsms" class="blue-text text-darken-2 container card-panel hoverable fs-4">Descrição do Cargo
-        <input id="icon-textsms" type="text" maxlength="500" required name=" descricao : "></label>
+        <input class="inputs" id="icon-textsms" type="text" maxlength="500" required name=" descricao : "></label>
       <br>
       <br>
       <i class="material-icons prefix">date_range</i>
       <label for="icon-date_range" class="blue-text text-darken-2 container card-panel hoverable fs-4">Data de Início
-        <input id="date_range" type="date" required name=" date : " min="01-01-1900" max="31-12-3000"></label>
+        <input class="inputs" id="date_range" type="date" required name=" date : " min="01-01-1900" max="31-12-3000"></label>
   </fieldset>
   <button type="submit" id="submitButton" class="btn waves-effect waves-light">Enviar</button>
-  <button type="reset" id="resetButton">Limpar</button></form>
+  <button type="reset" id="resetButton" class="btn waves-effect waves-light">Limpar</button></form>
   <script src="script.js"></script>
 </body>
 </html>
