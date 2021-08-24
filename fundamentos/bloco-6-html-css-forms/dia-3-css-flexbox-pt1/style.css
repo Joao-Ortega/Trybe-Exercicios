@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+#top-page {
+  background-color: rgb(32, 31, 31);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+h1 {
+  color: rgb(209, 204, 204);
+}
+
+h3 {
+  color: rgb(209, 204, 204);
+  text-decoration: underline;
+}
+
+h4 {
+  padding: 15px;
+}
+
+section p {
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.programing {
+  width: 525px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.programing2 {
+  width: 525px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-evenly;
+  margin: auto auto 35px auto;
+}
+
+.cards {
+  text-align: center;
+  background-color: rgb(241, 241, 241);
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 10px 5px 5px rgb(199, 199, 199);
+}
+
+.header-img {
+  width: 70px;
+}
+
+.gallery-img {
+  width: 150px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.social-img {
+  width: 35px;
+  margin-left: 10px;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+hr {
+width: 250px;
+margin: auto;
+color: rgb(241, 241, 241);
+}
