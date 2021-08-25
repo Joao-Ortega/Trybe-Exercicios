@@ -88,3 +88,39 @@ footer {
     font-size: 22px;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: blanchedalmond;
+  }
+
+  .chapters-information {
+    display: flex;
+    justify-content:space-around;
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .links {
+    font-size: 20px;
+  }
+
+  .aside-one {
+    font-size: 22px;
+  }
+
+  .aside-two {
+    font-size: 22px;
+  }
+  .main-content h1 {
+    font-size: 30px;
+  }
+
+  .main-content p {
+    font-size: 25px;
+    margin: 5px 10px;
+  }
+}
