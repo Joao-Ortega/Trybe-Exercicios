@@ -1,0 +1,90 @@
+* {
+  margin: 5px 5px;
+}
+
+.title {
+  font-size: 18px;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.aside-one ul li {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.aside-two ul li {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.main-content h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.main-content P {
+  text-align: justify;
+}
+
+.main-content {
+  margin-bottom: 18px;
+}
+
+footer {
+  background-color: rgb(44, 44, 44);
+  color: white;
+  text-align: justify;
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    background-color: rgb(44, 44, 44);
+    color: white;
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .chapters-information {
+    display: flex;
+    justify-content: center;
+  }
+
+  .aside-one {
+    border-right: 2px solid black;
+    padding-right: 35px;
+    font-size: 18px;
+  }
+
+  .aside-two {
+    border-left: 2px solid black;
+    font-size: 18px;
+  }
+
+  h1 {
+    border-top: 2px solid black;
+    padding-top: 15px;
+  }
+
+  .main-content p {
+    margin: 0 auto;
+    text-align:justify;
+    font-size: 22px;
+  }
+}
