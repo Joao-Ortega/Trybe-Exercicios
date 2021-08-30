@@ -136,4 +136,15 @@ const numberOfStudents = obj => {
 // número 07 Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. 
 const getValueByNumber = (key, position) => {
   return Object.values(key)[position];
-}; console.log(getValueByNumber(lesson1, 0));
+};
+// número 08 Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave.
+const verifyPair = (obj, key, value) => {
+  let arrayOfObject = Object.entries(obj);
+  let isEqual = false;
+  for (let index in arrayOfObject) {
+    if (arrayOfObject[index][0] === key && arrayOfObject[index][1] === value) {
+      isEqual = true;
+    }
+  }
+  return isEqual;
+}; 
