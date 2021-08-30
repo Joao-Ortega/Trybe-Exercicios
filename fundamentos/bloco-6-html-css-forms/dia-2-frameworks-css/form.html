@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="materialize/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <!-- POP UP VALIDATION -->
+  <link rel="stylesheet" href="/home/joaopedro/Trybe-exercicios/fundamentos/bloco-6-html-css-forms/dia-2-frameworks-css/node_modules/popup-validation/bin/validation.min.css">
+  <script src="/home/joaopedro/Trybe-exercicios/fundamentos/bloco-6-html-css-forms/dia-2-frameworks-css/node_modules/popup-validation/bin/validation.min.js"></script>
   <title>Document</title>
 </head>
 <body>
@@ -16,7 +19,7 @@
   <fieldset>
     <i class="material-icons prefix">account_circle</i>
     <label for="icon-prefix" class="blue-text text-darken-2 container card-panel hoverable fs-4">Nome Completo:
-      <input class="inputs" id="icon-prefix" type="text" name=" nome : " maxlength="45" required ></label>
+      <input class="inputs validate" id="icon-prefix" type="text" name=" nome : " maxlength="45" data-validate="required,name"></label>
     <br>
     <br>
     <i class="material-icons prefix">email</i>
