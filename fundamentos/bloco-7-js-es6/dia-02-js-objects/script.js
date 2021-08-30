@@ -148,3 +148,14 @@ const verifyPair = (obj, key, value) => {
   }
   return isEqual;
 }; 
+// Bônus
+const mathEstudents = obj => {
+  let studentsWhoWatched = 0;
+  for (let index in obj) {
+    if (obj[index].materia === 'Matemática') {
+      studentsWhoWatched += obj[index].numeroEstudantes;
+    }
+  }    
+    return studentsWhoWatched;
+};
+console.log(mathEstudents(allLessons));
