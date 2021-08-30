@@ -1,7 +1,7 @@
 //Agora, para praticar, crie uma função que receba três parâmetros, sendo eles: um objeto, o nome de uma chave e o seu valor. O retorno dessa função deve ser o objeto já com a nova chave adicionada nele.
 const pessoa1 = {
-  name : 'João',
-  age : 24,
+  name: 'João',
+  age: 24,
 }
 
 const addToObject = (obj, newKey, valueKey) => {
@@ -32,3 +32,63 @@ const skills = student => {
   }
 }
 skills(student1);
+
+// Part I Exercise of the day
+const order = {
+  name: 'Rafael Andrade',
+  phoneNumber: '11-98763-1416',
+  address: {
+    street: 'Rua das Flores',
+    number: '389',
+    apartment: '701',
+  },
+  order: {
+    pizza: {
+      marguerita: {
+        amount: 1,
+        price: 25,
+      },
+      pepperoni: {
+        amount: 1,
+        price: 20,
+      }
+    },
+    drinks: {
+      coke: {
+        type: 'Coca-Cola Zero',
+        price: 10,
+        amount: 1,
+      }
+    },
+    delivery: {
+      deliveryPerson: 'Ana Silveira',
+      price: 5,
+    }
+  },
+  payment: {
+    total: 60,
+  },
+};
+// Variables
+const deliveryPerson = order.order.delivery.deliveryPerson;
+const customer = order.name;
+const rua = order.address.street;
+const numberOfTheStreet = order.address.number;
+const apartment = order.address.apartment;
+
+const customerInfo = (order) => {
+  console.log(`"Olá ${deliveryPerson}, entrega para: ${order.name}, ${order.phoneNumber}, R.${rua}, N:${numberOfTheStreet}, AP:${apartment}.`);
+}
+
+customerInfo(order);
+
+const orderModifier = (order) => {
+  const newName = order.name = 'Luiz Silva';
+  const pizza = Object.keys(order.order.pizza);
+  const drink = order.order.drinks.coke.type;
+  const total = order.payment.total = 50;
+  console.log(`Olá ${newName}, o total do seu pedido de ${pizza} e ${drink} é R$${total}`);
+
+}
+
+orderModifier(order);
