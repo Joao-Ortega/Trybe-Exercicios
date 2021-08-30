@@ -1,3 +1,6 @@
+validation.init("#myForm", {
+  events: ["change", "paste", "keyup"]
+});
 const selectDropDown = document.getElementById('allStates');
 const submitButton = document.querySelector('#submitButton');
 const allInputs = document.querySelectorAll('.inputs');
