@@ -118,3 +118,8 @@ const addShift = shift => {
   lesson2.turno = shift;
   return lesson2;
 };
+// número 02 Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
+const allKeys = obj => Object.keys(obj);
+// número 03 Crie uma função para mostrar o tamanho de um objeto.
+const lengthOfObject = obj => Object.keys(obj).length;
+console.log(lengthOfObject(lesson3));
