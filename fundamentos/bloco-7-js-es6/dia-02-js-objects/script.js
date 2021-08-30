@@ -132,4 +132,8 @@ const numberOfStudents = obj => {
   let class2 = obj.lesson2.numeroEstudantes;
   let class3 = obj.lesson3.numeroEstudantes;
   return class1 + class2 + class3;
-}; console.log(numberOfStudents(allLessons));
+}; 
+// número 07 Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. 
+const getValueByNumber = (key, position) => {
+  return Object.values(key)[position];
+}; console.log(getValueByNumber(lesson1, 0));
