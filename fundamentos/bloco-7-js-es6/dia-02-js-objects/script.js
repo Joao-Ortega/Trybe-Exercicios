@@ -122,4 +122,5 @@ const addShift = shift => {
 const allKeys = obj => Object.keys(obj);
 // número 03 Crie uma função para mostrar o tamanho de um objeto.
 const lengthOfObject = obj => Object.keys(obj).length;
-console.log(lengthOfObject(lesson3));
+// número 04 Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
+const allValues = obj => Object.values(obj);
