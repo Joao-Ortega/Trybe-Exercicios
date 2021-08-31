@@ -158,4 +158,31 @@ const mathEstudents = obj => {
   }    
     return studentsWhoWatched;
 };
-console.log(mathEstudents(allLessons));
+// Bônus 02
+const takingClasses = (obj, teacher) => {
+  let aulas = [];
+  for (let index in obj) {
+    if (obj[index].professor === teacher) {
+      aulas.push(obj[index].materia);
+    }
+  }
+  return aulas;
+};
+
+const totalOfStudents = (obj, teacher) => {
+  let estudantes = 0;
+  for (let index in obj) {
+  if (obj[index].professor === teacher) {
+    estudantes += obj[index].numeroEstudantes;
+  }
+}
+  return estudantes;
+}
+
+const createReport = teacher => {
+  const reportObject = {};
+  reportObject['professor'] = teacher;
+  reportObject['aulas'] = takingClasses(allLessons, teacher);
+  reportObject['estudantes'] = totalOfStudents(allLessons, teacher);
+  return reportObject;
+}; console.log(createReport('Maria Clara'));
