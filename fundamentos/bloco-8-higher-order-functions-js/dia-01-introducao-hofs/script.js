@@ -3,7 +3,7 @@ const awaking = () => 'Acordando!!';
 
 const breakFast = () => 'Bora tomar café!!';
 
-const sleep = () =>  'Partiu dormir!!';
+const sleep = () => 'Partiu dormir!!';
 
 const doingThings = (func) => func();
 
@@ -15,14 +15,30 @@ const hiredPerson = (fullName) => {
   object.nomeCompleto = fullName;
   object.email = `${emailName.toLowerCase()}@trybe.com`;
   return object;
-} 
-console.log(hiredPerson('João Pedro'));
+};
 
-const newEmployees = () => {
+const newEmployees = (func) => {
   const employees = {
-    id1: hiredPerson('Pedro Guerra'), // Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro, substituindo as aspas
-    id2:  hiredPerson('Luiza Drumond'), // Nome: Luiza Drumond -> Chame sua função passando o nome Luiza Drumond como parâmetro, substituindo as aspas
-    id3:  hiredPerson('Carla Paiva'), // Nome: Carla Paiva -> Chame sua função passando o nome Carla Paiva como parâmetro, substituindo as aspas
+    id1: func('Pedro Guerra'), // Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro, substituindo as aspas
+    id2: func('Luiza Drumond'), // Nome: Luiza Drumond -> Chame sua função passando o nome Luiza Drumond como parâmetro, substituindo as aspas
+    id3: func('Carla Paiva'), // Nome: Carla Paiva -> Chame sua função passando o nome Carla Paiva como parâmetro, substituindo as aspas
   }
   return employees;
-}; console.log(newEmployees());
+}; 
+// 02
+const playerNumber = 2;
+const winCheck = (yourNumber, n) => {
+  if (yourNumber === n){
+    return true;
+  } else {
+    return false;
+  }
+}
+const hof = (playerNumber, func) => {
+  const luckyNumber = Math.floor(Math.random() * 5) + 1;
+  if (func(playerNumber, luckyNumber)){
+    return 'Parabéns você ganhou!';
+  } else {
+    return 'Tente novamente!';
+  }
+};
