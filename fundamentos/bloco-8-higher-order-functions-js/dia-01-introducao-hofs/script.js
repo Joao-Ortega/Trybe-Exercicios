@@ -43,26 +43,27 @@ const hof = (playerNumber, func) => {
   }
 };
 // 03
-const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const RIGHT_ANSWERS =   ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
 const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 let points = 0;
 const testIfAproval = (arr1, arr2) => {
   for (let index = 0; index < arr1.length; index += 1) {
-    for (let index2 = 0; index2 < arr2.length; index2 += 1) {
-      if (arr1[index] === arr2[index2]) {
+      if (arr1[index] === arr2[index]) {
         points += 1;
-      } else if (arr1[index] !== arr2[index2]) {
-        points - 0.5;
-      } else if (arr2[index2] === 'N.A') {
-        points;
+      } else if (arr2[index] === 'N.A') {
+        points = points;
+      } else if (arr1[index] !== arr2[index]) {
+        points -= 0.5;
       }
     }
-  }
-  return points;
-}
+    return points;
+  }; 
+ 
 const higherOrder = (template, check, callback) => {
   return `Gabarito: ${template}
   Respostas: ${check}
   Pontuação: ${callback(template, check)}`;
 };
+// bônus
+
 
