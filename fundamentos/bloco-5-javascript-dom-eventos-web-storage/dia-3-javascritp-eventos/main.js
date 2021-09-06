@@ -24,7 +24,7 @@ textInput.addEventListener("input", addText);
 function addText() {
     for(let index of li) {
         if(index.className === "tech") {
-            index.innerText = textInput.nodeValue;
+            index.innerText = textInput.Value;
         }
     }
 }
