@@ -62,11 +62,19 @@ const books = [
     releaseYear: 1928,
   },
 ];
-// 07
-const expectedResult = 'O Senhor dos Anéis';
 
-function authorWith3DotsOnName() {
-  return books.find((value) => (value.author.name.split(' ').filter((value) => value.endsWith('.'))).length === 3).name; 
-}
+// 02
+const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
 
-assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
+const reduceNames = () => {
+  const names = books.reduce((acc, value, index, array) => {
+  if (index === array.length - 1) {
+   return `${acc} ${value.author.name}.`
+  } else {
+   return `${acc} ${value.author.name},`
+  }
+}, '')
+return names.trim();
+};
+
+assert.strictEqual(reduceNames(), expectedResult);

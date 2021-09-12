@@ -62,11 +62,11 @@ const books = [
     releaseYear: 1928,
   },
 ];
-// 07
-const expectedResult = 'O Senhor dos Anéis';
+// 03
+const expectedResult = 43;
 
-function authorWith3DotsOnName() {
-  return books.find((value) => (value.author.name.split(' ').filter((value) => value.endsWith('.'))).length === 3).name; 
+function averageAge() {
+  return books.reduce((acc, value) => acc + (value.releaseYear - value.author.birthYear), 0) / books.length;
 }
 
-assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
+assert.strictEqual(averageAge(), expectedResult);

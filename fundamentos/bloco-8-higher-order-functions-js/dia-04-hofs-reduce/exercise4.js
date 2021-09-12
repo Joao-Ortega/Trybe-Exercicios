@@ -62,11 +62,24 @@ const books = [
     releaseYear: 1928,
   },
 ];
-// 07
-const expectedResult = 'O Senhor dos Anéis';
+// 04
 
-function authorWith3DotsOnName() {
-  return books.find((value) => (value.author.name.split(' ').filter((value) => value.endsWith('.'))).length === 3).name; 
-}
+const expectedResult = {
+  id: 1,
+  name: 'As Crônicas de Gelo e Fogo',
+  genre: 'Fantasia',
+  author: {
+    name: 'George R. R. Martin',
+    birthYear: 1948,
+  },
+  releaseYear: 1991,
+};
 
-assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
+const longestNamedBook = () => books.reduce((acc, value) => {
+    if (value.name.length > acc.name.length) {
+      return value;
+    } 
+      return acc;
+  })
+
+assert.deepStrictEqual(longestNamedBook(), expectedResult);
