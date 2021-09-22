@@ -54,32 +54,37 @@ function decode(String) {
 }
 
 // Desafio 10
-function techList(arrayOfNames, name) {
-  let listTech = [];
-  arrayOfNames.sort();
-  for (let index in arrayOfNames) {
-    let object = {};
-    object['tech'] = arrayOfNames[index];
-    object['name'] = name;
-    listTech.push(object);
-  } if(listTech.length > 0) {
-    return listTech;
-  } else {
-    return 'Vazio!';
-} 
-}
+// function techList(arrayOfNames, name) {
+//   let listTech = [];
+//   arrayOfNames.sort();
+//   for (let index in arrayOfNames) {
+//     let object = {};
+//     object['tech'] = arrayOfNames[index];
+//     object['name'] = name;
+//     listTech.push(object);
+//   } if(listTech.length > 0) {
+//     return listTech;
+//   } else {
+//     return 'Vazio!';
+// } 
+// }
+// Código acima refatorado com mais conhecimentos
+const techList = (arrayOfNames, name) => (arrayOfNames.length === 0) ? 'Vazio!' : arrayOfNames.sort().map((value) => ({
+  tech: value,
+  name: name,
+}));
 
 // Desafio 13
 function hydrate(String) {
   let sum = 0;
-  for(let index in String) {
-    if(parseInt(String[index])) {
+  for (let index in String) {
+    if (parseInt(String[index])) {
       sum += parseInt(String[index])
-    } 
-    } if(sum <= 1) {
-      return sum + " copo de água";
     }
-      return sum + " copos de água";
+  } if (sum <= 1) {
+    return sum + " copo de água";
+  }
+  return sum + " copos de água";
 } console.log(hydrate("1 cerveja"));
 
 module.exports = {
