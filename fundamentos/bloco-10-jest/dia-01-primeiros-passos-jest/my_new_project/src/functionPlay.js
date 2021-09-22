@@ -75,18 +75,24 @@ const techList = (arrayOfNames, name) => (arrayOfNames.length === 0) ? 'Vazio!' 
 }));
 
 // Desafio 13
-function hydrate(String) {
-  let sum = 0;
-  for (let index in String) {
-    if (parseInt(String[index])) {
-      sum += parseInt(String[index])
-    }
-  } if (sum <= 1) {
-    return sum + " copo de água";
-  }
-  return sum + " copos de água";
-} console.log(hydrate("1 cerveja"));
-
+// function hydrate(String) {
+//   let sum = 0;
+//   for (let index in String) {
+//     if (parseInt(String[index])) {
+//       sum += parseInt(String[index])
+//     }
+//   } if (sum <= 1) {
+//     return sum + " copo de água";
+//   }
+//   return sum + " copos de água";
+// } 
+// Refatorando código acima com conhecimentos atuais
+const hydrate = (str) => {
+  const strSplited = str.split(' ');
+  const result = strSplited.filter((value) => parseInt(value)).reduce((acc, elem) => acc + parseInt(elem), 0);
+  return (result === 1) ? `${result} copo de água` : `${result} copos de água`;
+}
+console.log(hydrate("1 cervejas"));
 module.exports = {
   encode,
   decode,
