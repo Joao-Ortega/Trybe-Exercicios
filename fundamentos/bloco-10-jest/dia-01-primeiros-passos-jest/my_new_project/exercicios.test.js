@@ -3,6 +3,7 @@ const myRemove = require('./exercicio2');
 const myRemoveWithoutCopy = require('./exercicio3.js');
 const myFizzBuzz = require('./exercicio4.js');
 const { obj1, obj2, obj3 } = require('./exercicio5.js');
+
 describe('1. Verifica se a função retorna a soma de dois números', () => {
   it('Se a função receber como parâmetro 2 e 6, deverá retornar 8', () => {
     expect(sum(2, 6)).toBe(8);
