@@ -92,7 +92,7 @@ const hydrate = (str) => {
   const result = strSplited.filter((value) => parseInt(value)).reduce((acc, elem) => acc + parseInt(elem), 0);
   return (result === 1) ? `${result} copo de água` : `${result} copos de água`;
 }
-console.log(hydrate("1 cervejas"));
+
 module.exports = {
   encode,
   decode,
