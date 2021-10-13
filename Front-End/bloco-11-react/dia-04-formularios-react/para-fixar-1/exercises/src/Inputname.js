@@ -2,11 +2,13 @@ import React from "react";
 
 class Inputname extends React.Component {
   render() {
-    const { value, handleChange, handleErrors } = this.props;
-    if (value.length > 50) handleErrors(true);
+    const { value, handleChange } = this.props;
     
     return (
-      <input type="name" name="Name" value={ value } onChange={ handleChange } ></input>
+      <label>Nome
+        { value.length > 50 ? <span>Nome Gigante</span> : '' }
+      <input type="name" name="Name" value={ value } onChange={ handleChange } />
+      </label>
     )
   }
 }

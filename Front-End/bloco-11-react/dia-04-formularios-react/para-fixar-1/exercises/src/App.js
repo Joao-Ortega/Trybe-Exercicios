@@ -16,7 +16,6 @@ class App extends React.Component {
     }
     this.fileInput = React.createRef();
     this.handleChange = this.handleChange.bind(this);
-    this.handleErrors = this.handleErrors.bind(this);
   }
 
   handleChange ({ target }) {
@@ -24,18 +23,6 @@ class App extends React.Component {
     const value = target.type === 'checkbox'? target.checked : target.value
     this.setState({
       [name]: value,
-    })
-  }
-
-  handleErrors (param) {
-    if (param === true) {
-      // this.setState({
-      //   formWithError: 'true',
-      //  })
-      // alert('Please review your informations! Something is wrong.')
-    }
-    this.setState({
-     formWithError: 'false',
     })
   }
 
@@ -47,9 +34,7 @@ class App extends React.Component {
          <Select value={ this.state.FavoriteFood } handleChange={ this.handleChange }/>
         </label>
         <fieldset>
-        <label>Nome
-         <Inputname value={ this.state.Name } handleChange={ this.handleChange } handleErrors={ this.handleErrors } />
-        </label>
+         <Inputname value={ this.state.Name } handleChange={ this.handleChange } />
         <label>Email
           <input type="email" name="Email" value={ this.state.Email } onChange={ this.handleChange }></input>
         </label>
