@@ -1,5 +1,7 @@
 import React from "react";
 import './style.css';
+import Inputname from "./Inputname";
+import Select from "./Select";
 
 class App extends React.Component {
   constructor() {
@@ -10,9 +12,11 @@ class App extends React.Component {
       Email: '',
       Description: '',
       OnlyOneFav: 'false',
+      formWithError: 'false',
     }
     this.fileInput = React.createRef();
     this.handleChange = this.handleChange.bind(this);
+    this.handleErrors = this.handleErrors.bind(this);
   }
 
   handleChange ({ target }) {
@@ -23,21 +27,28 @@ class App extends React.Component {
     })
   }
 
+  handleErrors (param) {
+    if (param === true) {
+      // this.setState({
+      //   formWithError: 'true',
+      //  })
+      // alert('Please review your informations! Something is wrong.')
+    }
+    this.setState({
+     formWithError: 'false',
+    })
+  }
+
   render() {
   return (
     <div>
       <form className="div-form">
         <label>Comida Favorita
-          <select name="FavoriteFood" value={ this.state.FavoriteFood } onChange={ this.handleChange }>
-            <option value="Strogonoff">Strogonoff</option>
-            <option value="Feijoada">Feijoada</option>
-            <option value="Pizza">Pizza</option>
-            <option value="Lasanha">Lasanha</option>
-          </select>
+         <Select value={ this.state.FavoriteFood } handleChange={ this.handleChange }/>
         </label>
         <fieldset>
         <label>Nome
-          <input type="name" name="Name" value={ this.state.Name } onChange={ this.handleChange }></input>
+         <Inputname value={ this.state.Name } handleChange={ this.handleChange } handleErrors={ this.handleErrors } />
         </label>
         <label>Email
           <input type="email" name="Email" value={ this.state.Email } onChange={ this.handleChange }></input>
