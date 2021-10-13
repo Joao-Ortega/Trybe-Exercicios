@@ -1,0 +1,8 @@
+.div-form {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  justify-content: space-between;
+  width: 200px;
+  height: 200px;
+}
