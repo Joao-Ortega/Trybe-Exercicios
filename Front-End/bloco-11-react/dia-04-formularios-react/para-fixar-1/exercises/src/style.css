@@ -6,3 +6,10 @@
   width: 200px;
   height: 200px;
 }
+textarea {
+  resize: none;
+}
+
+fieldset {
+  margin: 10px;
+}
