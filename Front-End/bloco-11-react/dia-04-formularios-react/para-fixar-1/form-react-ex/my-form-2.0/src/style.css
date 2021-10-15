@@ -1,0 +1,10 @@
+.forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 150px;
+}
+
+button {
+  align-self: flex-start;
+}
