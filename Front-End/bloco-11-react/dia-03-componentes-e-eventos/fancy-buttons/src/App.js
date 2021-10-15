@@ -13,10 +13,13 @@ class App extends React.Component {
     this.text2 = this.text2.bind(this)
     this.text3 = this.text3.bind(this)
   }
-  text1() {
+  text1(param) {
     this.setState((stateBefore, _props) => ({
       clicks1: stateBefore.clicks1 + 1,
     }))
+    if (param % 2 !== 0) {
+      console.log('VERDE')
+    }
   }
   text2() {
     this.setState((stateBefore, _props) => ({
@@ -31,7 +34,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="btns-div">
-        <button onClick={this.text1}>{ this.state.clicks1 }</button>
+        <button onClick={() => this.text1(this.state.clicks1)}>{ this.state.clicks1 }</button>
         <button onClick={this.text2}>{ this.state.clicks2 }</button>
         <button onClick={this.text3}>{ this.state.clicks3 }</button>
       </div>
