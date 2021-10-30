@@ -32,14 +32,11 @@ describe('Testa se App funciona corretamente', () => {
 
   it('Verificando se o botão funciona corretamente', () => {
     const EMAIL = 'joaozinho@test.com';
-    const textEmail = screen.getByTestId('id-email-user');
-    expect(textEmail).toBeInTheDocument();
-    expect(textEmail).toHaveTextContent('Valor:');
-
     const btnSend = screen.getByTestId('id-send');
     const inputEmail = screen.getByLabelText('Email');
     userEvent.type(inputEmail, EMAIL);
     userEvent.click(btnSend);
+    const textEmail = screen.getByTestId('id-email-user')
 
     expect(inputEmail).toHaveValue('');
     expect(textEmail).toHaveTextContent(`Valor: ${EMAIL}`);

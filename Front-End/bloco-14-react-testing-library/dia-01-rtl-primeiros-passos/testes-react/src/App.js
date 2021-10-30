@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import ValidEmail from './components/ValidEmail';
 
 class App extends React.Component {
   constructor() {
@@ -55,7 +56,7 @@ class App extends React.Component {
         Enviar
       </button>
       <button type="button" value="Voltar" id="btn-Back">Votar</button>
-      <h2 data-testid="id-email-user">{ `Valor: ${saveEmail}` }</h2>
+     <ValidEmail email={ saveEmail } />
       </header>
     </div>
   );
