@@ -105,8 +105,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 14: Testes Automatizados
 - [x] 14-1: _Testando React com a React Testing Library_
 - [x] 14-2: _Mocks e Inputs_
-- [ ] 14-3: _Testando React com a React Testing Library_
-- [ ] 14-4: _[Projeto - Testes em React]()_
+- [x] 14-3: _Testando React com a React Testing Library_
+- [x] 14-4: _[Projeto - Testes em React](https://github.com/tryber/sd-015-a-project-react-testing-library/pull/5)_
 
 ##### Bloco 15: Introdução ao Redux
 
