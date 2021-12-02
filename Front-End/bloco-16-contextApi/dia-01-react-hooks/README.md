@@ -2,6 +2,8 @@ EXERCÍCIOS REALIZADOS
 
 
   Exercício 01 ===> ('https://github.com/Joao-Ortega/exercise-contextAPI-refactoring/pull/1/files')
+  
+  
   Exercício 02 ===> ('https://github.com/Joao-Ortega/exercise-contextAPI-refactoring/pull/2/files')
 	
 	
