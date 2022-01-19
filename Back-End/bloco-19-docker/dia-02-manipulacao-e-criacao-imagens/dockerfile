@@ -1,0 +1,3 @@
+FROM chuanwen/cowsay:latest
+ENTRYPOINT [ "/usr/games/cowsay" ]
+CMD [ "Testando som 1 2" ]
