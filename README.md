@@ -126,11 +126,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 17-1: _Context API do React_
 - [x] 17-2: _React Hooks - useState e useContext_
 - [x] 17-3: _React Hooks - useEffect e Hooks customizados_
-- [x] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [x] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks](https://github.com/tryber/sd-015-a-project-starwars-planets-search/pull/52)_
 
 ##### Bloco 18: Projeto Final de Front-end
 
-- [x] 18-1: _[Projeto - App de Receitas]()_
+- [x] 18-1: _[Projeto - App de Receitas](https://github.com/tryber/sd-015-a-project-recipes-app/pull/351)_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
@@ -139,7 +139,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 19-1: _Utilizando Containers_
 - [x] 19-2: _Manipulação e criação de imagens no Docker_
 - [x] 19-3: _Orquestrando Containers com Docker Compose_
-- [x] 19-5: _[Projeto - Docker Todo-List]()_
+- [x] 19-5: _[Projeto - Docker Todo-List](https://github.com/tryber/sd-015-a-project-docker-todo-list/pull/99)_
 
 ##### Bloco 20: Introdução à SQL
 
@@ -147,14 +147,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 20-2: _Encontrando dados em um banco de dados_
 - [x] 20-3: _Filtrando dados de forma específica_
 - [x] 20-4: _Manipulando tabelas
-- [x] 20-4: _[Projeto - All for One]()_
+- [x] 20-4: _[Projeto - All for One](https://github.com/tryber/sd-015-a-mysql-all-for-one/pull/2)_
 
 ##### Bloco 21: Funções SQL, JOINS e Normalização
 
 - [x] 21-1: _Funções mais usadas no SQL_
 - [x] 21-2: _Descomplicando JOINs_
 - [x] 21-2: _Tranformando ideias em um modelo de banco de dados_
-- [x] 21-3: _[Projeto - One For All]()_
+- [x] 21-3: _[Projeto - One For All](https://github.com/tryber/sd-015-a-mysql-one-for-all/pull/30)_
 
 ##### Bloco 22: Introdução - NoSQL
 
