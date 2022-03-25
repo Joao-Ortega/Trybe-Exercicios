@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+  "target": "es2016",
+  "module": "commonjs",
+  "rootDir": "./",
+  "outDir": "./dist",
+  "preserveConstEnums": true,
+  "esModuleInterop": true,
+  "forceConsistentCasingInFileNames": true,
+  "strict": true,
+  "skipLibCheck": true
+  },
+  "include": [
+  "**/*"
+  ], /* aqui estamos incluindo todos os arquivos dentro da pasta src */
+  "exclude": [
+  "node_modules",
+  "**/*.spec.ts"
+  ] /* aqui estamos excluindo a pasta node_modules e os arquivos de teste */
+  } 
