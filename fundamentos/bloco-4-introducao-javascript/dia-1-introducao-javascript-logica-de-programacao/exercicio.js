@@ -74,22 +74,22 @@ else {
 
 //Exercício número 6.
 
-/*let xadrezPeca = (prompt("Type a chess piece", ""));
-if(xadrezPeca.toLowerCase() == "pawn") {
-    console.log("Pawn -> Foward only 1 block, Diagonal if there's a piece to capture");
-} else if(xadrezPeca.toLowerCase() == "rook") {
-    console.log("Rook -> Foward vertically and horizontally many blocks as possible, stop if capture a piece");
-} else if(xadrezPeca.toLowerCase() == "knight") {
-    console.log("Knight -> Moves in 'L' of 4 blocks, in any direction, only capture if the piece is in the last block");
-} else if(xadrezPeca.toLowerCase() == "bishop") {
-    console.log("Bishop -> Moves in diagonally many blocks as possible, stop if capture a piece");
-} else if(xadrezPeca.toLowerCase() == "queen") {
-    console.log("Queen -> Moves many blocks as possible in any direction, stop if capture a piece.");
-} else if(xadrezPeca.toLowerCase() == "king") {
-    console.log("King -> Moves in any direction but just one block at time");
-} else {
-    console.log("Error invalid Piece")
-}*/
+// let xadrezPeca = (prompt("Type a chess piece", ""));
+// if(xadrezPeca.toLowerCase() == "pawn") {
+//     console.log("Pawn -> Foward only 1 block, Diagonal if there's a piece to capture");
+// } else if(xadrezPeca.toLowerCase() == "rook") {
+//     console.log("Rook -> Foward vertically and horizontally many blocks as possible, stop if capture a piece");
+// } else if(xadrezPeca.toLowerCase() == "knight") {
+//     console.log("Knight -> Moves in 'L' of 4 blocks, in any direction, only capture if the piece is in the last block");
+// } else if(xadrezPeca.toLowerCase() == "bishop") {
+//     console.log("Bishop -> Moves in diagonally many blocks as possible, stop if capture a piece");
+// } else if(xadrezPeca.toLowerCase() == "queen") {
+//     console.log("Queen -> Moves many blocks as possible in any direction, stop if capture a piece.");
+// } else if(xadrezPeca.toLowerCase() == "king") {
+//     console.log("King -> Moves in any direction but just one block at time");
+// } else {
+//     console.log("Error invalid Piece")
+// }
 
 //Exercício número 7.
 
@@ -121,3 +121,23 @@ if(xadrezPeca.toLowerCase() == "pawn") {
     } else{
         console.log(false);
     }*/
+
+    // Exercício númeor 9
+    // function defineOdds() {
+    //     const n1 = Math.floor(Math.random() * 100) + 1;
+    //     const n2 = Math.floor(Math.random() * 100) + 1;
+    //     const n3 = Math.floor(Math.random() * 100) + 1;
+    //     console.log(n1, n2, n3);
+    //     if (n1 % 2 !== 0 || n2 % 2 !== 0 || n3 % 2 !== 0) {
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    // }
+
+    // console.log(defineOdds());
+
+    // se o salário for maior que 1000, a pessoa é milionaria
+    // acima de 5000 e abaixo de 10000 rica
+    // abaixo de 5000 e acima de 1000 sobrevivente
+    // abaixo de 1000 indigente;
