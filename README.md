@@ -156,43 +156,52 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 21-2: _Tranformando ideias em um modelo de banco de dados_
 - [x] 21-3: _[Projeto - One For All](https://github.com/tryber/sd-015-a-mysql-one-for-all/pull/30)_
 
-##### Bloco 22: Introdução - NoSQL
+##### Bloco 22: Introdução - Node.js
 
-- [x] 22-1: _MongoDB - Introdução_
-- [x] 22-2: _Filter Operators_
-- [x] 22-3: _[Projeto - Data Flights]()_
+- [x] 22-1: _Node.js - Um motor JavaScript_
+- [x] 22-2: _Fluxo Assíncrono_
+- [x] 22-3: _Mocha, Chai e Sinon - Testes Back-End_
+- [x] 22-4: _Express - HTTP com Node.js_
+- [x] 22-5: _Express - Middlewares_
+- [x] 22-6: _[Projeto - Talker Manager](https://github.com/tryber/sd-015-a-project-talker-manager/pull/44)_
 
-##### Bloco 23: Updates
+##### Bloco 23: Node.js - Camada de Serviço e Arquiteura Rest e Restful
 
-- [ ] 23-1: _Updates Simples_
-- [ ] 23-2: _Updates Complexos - Arrays - Parte 1_
-- [ ] 23-3: _Updates Complexos - Arrays - Parte 2_
-- [ ] 23-4: _[Projeto - Commerce]()_
+- [x] 23-1: _Arquitetura de Software - Camada de Model_
+- [x] 23-2: _Arquitetura de Software - Camada de Controller e Service_
+- [x] 23-3: _Arquitetura Web - Rest e Restful_
+- [x] 23-4: _Arquitetura de Software - Testando Camadas_
+- [x] 23-5: _[Projeto - Store Manager](https://github.com/tryber/sd-015-a-store-manager/pull/16)_
 
-##### Bloco 24: Aggregation Framework
+##### Bloco 24: ORM e Autenticação
 
-- [ ] 24-1: _Aggregation Framework - Part 1_
-- [ ] 24-2: _Aggregation Framework - Part 2_
-- [ ] 24-3: _[Projeto - Aggregations]()_
+- [x] 24-1: _ORM - Interface da aplicação com o banco de dados_
+- [x] 24-2: _ORM - Associations_
+- [x] 24-3: _JWT - Json Web Token_
+- [x] 24-4: _Testando APIs com Testes de Integração_
+- [x] 24-3: _[Projeto - Blogs API](https://github.com/tryber/sd-015-a-project-blogs-api/pull/102)_
 
-##### Bloco 25: Intro - NodeJS
+##### Bloco 25: Deployment
 
-- [ ] 25-1: _NodeJS - Introdução_
-- [ ] 25-2: _NodeJS - Fluxo Assíncrono_
-- [ ] 25-3: _NodeJS - Arquitetura_
-- [ ] 25-4: _[Projeto - A CLI of Ice and Fire]()_
+- [x] 25-1: _Infraestrutura - Deploy com Heroku_
+- [x] 25-2: _Deploy Docker & Heroku_
+- [x] 25-3: _[Projeto - Stranger Things](https://github.com/tryber/sd-015-a-stranger-things-backend/pull/67)_
 
-##### Bloco 26: NodeJS
+##### Bloco 26: TypeScript
 
-- [ ] 26-1: _Express: HTTP com Node.js_
-- [ ] 26-2: _Arquitetura de Software - Introdução ao MVC_
-- [ ] 26-3: _[Projeto - Cookmaster]()_
+- [x] 26-1: _Introdução ao TypeScript_
+- [x] 26-2: _Tipagem Estática e Generics_
+- [x] 26-3: _Express com TypeScript_
+- [x] 26-3: _[Projeto - Trybe Smith](https://github.com/tryber/sd-015-a-project-trybesmith/pull/87)_
 
-##### Bloco 27: NodeJS
+##### Bloco 27: Programação Orientada a Objetos (POO) e SOLID
 
-- [ ] 27-1: _Arquitetura de Software - Camada de Serviço_
-- [ ] 27-2: _Arquitetura web - Rest e Restful_
-- [ ] 27-3: _[Projeto - Store Manager]()_
+- [x] 27-1: _Introdução à Orientação a Objetos_
+- [x] 27-2: _Heranças e Interfaces_
+- [x] 27-3: _Polimorfismo_
+- [x] 27-4: _SOLID - Introdução e Princípios S, O e D_
+- [x] 27-5: _SOLID - Princípios L e I_
+- [ ] 27-3: _[Projeto - Trybers and Dragons]()_
 
 ##### Bloco 28: NodeJS
 
