@@ -1,0 +1,13 @@
+use('products');
+// Finding all
+db.bios.find();
+// Finding All by id equal 5
+db.bios.find({ _id: 5 });
+// Finding all documents with last on the subdocument name equals to 'Hopper';
+db.bios.find({ 'name.last': 'Hopper' });
+// Showing only the name attribute from the documents;
+db.bios.find({}, { name: 1, _id: 0});
+// Testing pretty()
+db.bios.find().pretty();
+// Testing SKIP() and LIMIT();
+db.bios.find({}, { name: 1}).limit(2).skip(5);
