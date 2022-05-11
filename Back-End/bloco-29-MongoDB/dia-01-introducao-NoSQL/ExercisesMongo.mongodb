@@ -1,0 +1,22 @@
+db.bios.find();
+// Ex 01;
+db.bios.find({_id: 8});
+// Ex 02;
+db.bios.find({_id: 8}, { _id: 1, name: 1 });
+// Ex 03;
+db.bios.find({_id: 8}, { birth: 1, name: 1 });
+// Ex 04;
+db.bios.find({ 'name.first': 'John' }).pretty();
+// Ex 05;
+db.bios.find().limit(3).pretty();
+// Ex 06;
+db.bios.find().limit(2).skip(5);
+// Ex 07;
+db.books.countDocuments();
+// Ex 08;
+db.books.countDocuments({ status: 'PUBLISH' });
+// Ex 09;
+db.books.find({}, {_id: 0, title: 1, isbn: 1, pageCount: 1 })
+.limit(3);
+// Ex 10;
+db.books.find({ title: 1, authors: 1, status }, { status: 'MEAP' }).limit(10);
