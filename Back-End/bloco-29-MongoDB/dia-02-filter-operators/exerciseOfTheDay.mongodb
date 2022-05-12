@@ -1,0 +1,99 @@
+use('class');
+db.superheroes.find({
+  name: 'Abin Sur'
+}).limit(1);
+
+// Ex 02
+db.superheroes.find({
+  'aspects.height': { $lt: 1.80 }
+});
+// Ex 03
+db.superheroes.countDocuments({
+  'aspects.height': { $lt: 1.80 }
+});
+// Ex 04
+db.superheroes.countDocuments({
+  'aspects.height': { $lte: 1.80 }
+});
+// Ex 05
+db.superheroes.find({
+  'aspects.height': { $gte: 2.00 }
+}).limit(1);
+// Ex 06
+db.superheroes.countDocuments({
+  'aspects.height': { $gte: 2.00 }
+});
+// Ex 07
+db.superheroes.find({
+  'aspects.eyeColor': {
+    $eq: 'blue'
+  }
+});
+// Ex 08
+db.superheroes.countDocuments({
+  'aspects.eyeColor': {
+    $eq: 'blue'
+  }
+});
+// Ex 09
+db.superheroes.find({
+  'aspects.hairColor': {
+    $in: ['Black', 'No Hair']
+  }
+});
+// Ex 10
+db.superheroes.countDocuments({
+  'aspects.hairColor': {
+    $in: ['Black', 'No Hair']
+  }
+});
+// Ex 11
+db.superheroes.find({
+  $nor: [
+    {'aspects.hairColor': {$in: ['Black', 'No Hair']}}
+  ]
+});
+// Ex 12
+db.superheroes.countDocuments({
+  'aspects.height': {
+    $not: { $gt: 1.80 }
+  }
+});
+// Ex 13
+db.superheroes.find({
+  race: { $ne: 'Human' },
+  'aspects.height': { $ne: 1.80 }  
+});
+// Ex 14
+db.superheroes.find({
+  $and: [
+    { $or: [{ 'aspects.height': 1.80 }, { 'aspects.height': 2.00 }] },
+    { publisher: 'Marvel Comics' }
+  ]
+});
+// Ex 15
+db.superheroes.find({
+  $and: [
+    { $or:
+      [{'aspects.weight': { $gte: 80 }, 'aspects.weight': { $lte: 100 }}]
+    },
+    { $or: [{ race: 'Human' }, { race: 'Mutant' }] },
+    { publisher: { $not: { $eq: 'DC Comics' } } }
+  ]
+});
+// Ex 16
+db.superheroes.countDocuments({
+  race: { $exists: false }
+});
+// Ex 17
+db.superheroes.countDocuments({
+  'aspects.hairColor': { $exists: true }
+});
+// Ex 18
+db.superheroes.deleteOne({
+  publisher: { $eq: 'Sony Pictures' }
+});
+// Ex 19
+db.superheroes.deleteMany({
+  publisher: { $eq: 'George Lucas' }
+});

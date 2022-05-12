@@ -1,0 +1,44 @@
+use('business');
+
+db.restaurants.countDocuments();
+// Comparision Operators
+db.restaurants.countDocuments({ borough: { $in: ['Queens', 'Staten Island', 'Bronx'] } });
+
+db.restaurants.countDocuments({ cuisine: { $ne: ['American'] } });
+
+db.restaurants.countDocuments({ rating: { $gte: 8 } });
+
+db.restaurants.countDocuments({ rating: { $lt: 4 } });
+
+db.restaurants.countDocuments({ rating: { $nin: [5, 6, 7] } });
+
+// Logic Operators
+db.restaurants.countDocuments({ rating: { $not: { $lte: 5 } } });
+
+db.restaurants.countDocuments({ $or: [ { rating: { $gte: 6 } }, { borough: 'Brooklyn' } ] });
+
+db.restaurants.countDocuments({
+  $and: [
+    { borough: { $in: ['Queens', 'Staten Island', 'Brooklyn'] } },
+    { rating: { $gt: 4 } },
+  ]
+});
+
+db.restaurants.countDocuments({
+  $nor: [{ rating: 1 }, { cuisine: 'American' }]
+});
+
+db.restaurants.countDocuments({
+  $and: [
+    { $or: [{ rating: { $gt: 6, $lt: 10 } }] },
+    { $or: [{ borough: { $eq: 'Brooklyn' } }, { cuisine: { $ne: 'Delicatessen' } }]},
+    ],
+});
+// SORT()
+db.restaurants.find().sort({ name: 1 });
+
+db.restaurants.find().sort({ rating: -1 });
+// DELETE();
+db.restaurants.deleteMany({ cuisine: { $in: ['Ice Cream', 'Gelato', 'Yogurt', 'Ices'] } });
+
+db.restaurants.deleteMany({ cuisine: 'American' });
