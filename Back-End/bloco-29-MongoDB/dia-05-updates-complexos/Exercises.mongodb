@@ -1,0 +1,136 @@
+// Ex 01
+db.movies.updateOne({
+  title: 'Batman'
+}, {
+  $push: {
+    category: 'superhero'
+  }
+});
+// Ex 02
+db.movies.updateOne({
+  title: 'Batman'
+}, {
+  $push: {
+    category: {
+      $each: ['villain', 'comic-based']
+    }
+  }
+});
+// Ex 03
+db.movies.updateOne({
+  title: 'Batman'
+}, {
+  $pull: {
+    category: 'action'
+  }
+});
+// Ex 04
+db.movies.updateOne({
+  title: 'Batman'
+}, {
+  $pop: {
+    category: -1
+  }
+});
+// Ex 05
+db.movies.updateOne({
+  title: 'Batman'
+}, {
+  $pop: {
+    category: 1
+  }
+});
+// Ex 06
+db.movies.updateOne({
+  title: 'Batman'
+}, {
+  $addToSet: {
+    category: 'action'
+  }
+});
+// Ex 07
+db.movies.updateMany({
+  $or: [
+    {title: 'Batman'},
+    { title: 'Home Alone' }
+  ]
+},
+{
+  $push: {
+    category: "90's"
+  }
+});
+// Ex 08
+db.movies.updateOne({
+  title: 'Home Alone'
+}, {
+  $push: {
+    cast: {
+      $each: [
+        { actor: "Macaulay Culkin", character: "Kevin" },
+        { actor: "Joe Pesci", character: "Harry" },
+        { actor: "Daniel Stern" } 
+      ]
+    }
+  }
+});
+// Ex 09
+db.movies.updateOne(
+  {
+  title: 'Home ALone',
+  "cast.actor": 'Daniel Stern'
+  },
+  { $set: { "cast.$.character": 'Marv'},
+  });
+  // Ex 10
+  db.movies.updateOne({
+    title: 'Batman'
+  }, {
+    $push: {
+      cast: {
+        $each: [
+          { character: "Batman" },
+          { character: "Alfred" },
+          { character: "Coringa" }
+        ]
+      }
+    }
+  });
+  // Ex 11
+  db.movies.updateOne({
+    title: 'Batman',
+    "cast.character": 'Batman'
+  }, {
+    $set: { "cast.$.actor": 'Christian Bale' }
+  });
+
+  db.movies.updateOne({
+    title: 'Batman',
+    "cast.character": 'Alfred'
+  }, {
+    $set: { "cast.$.actor": 'Michal Caine' }
+  });
+
+  db.movies.updateOne({
+    title: 'Batman',
+    "cast.character": 'Coringa'
+  }, {
+    $set: { "cast.$.actor": 'Heath Ledger' }
+  });
+  // Ex 12
+  db.movies.updateOne(
+    {
+    title: 'Batman',
+    "cast.character": 'Batman',
+    },
+    {
+      $push: {
+        "cast.$.actor": {
+          $each: ['Michael Keaton', 'Val Kilmer', 'George Clooney'],
+          $sort: 1,
+      },
+    },
+  },
+);
+
+db.movies.find();
