@@ -1,6 +1,6 @@
-const firstLi = document.getElementById('first-li');
-const secondLi = document.getElementById('second-li');
-const thirdLi = document.getElementById('third-li');
+const firstLi = document.getElementById('firstLi');
+const secondLi = document.getElementById('secondLi');
+const thirdLi = document.getElementById('thirdLi');
 const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
 
@@ -21,10 +21,11 @@ const myWebpage = document.getElementById('my-spotrybefy');
 com a classe 'tech'; */
 let textInput = document.getElementById("input");
 textInput.addEventListener("input", addText);
-function addText() {
+function addText(event) {
     for(let index of li) {
         if(index.className === "tech") {
-            index.innerText = textInput.Value;
+            console.log('entrou');
+            index.innerText = event.target.value;
         }
     }
 }
@@ -60,6 +61,8 @@ function resetText(event) {
 }
 
 firstLi.addEventListener('dblclick', resetText);
+secondLi.addEventListener('dblclick', resetText);
+thirdLi.addEventListener('dblclick', resetText);
 
 // Não precisa passar o parâmetro dentro da callback resetText. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o

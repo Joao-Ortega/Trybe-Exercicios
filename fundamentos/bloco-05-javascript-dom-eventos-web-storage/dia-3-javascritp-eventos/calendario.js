@@ -85,7 +85,7 @@ let friday = document.getElementsByClassName("friday");
 fridayButton.addEventListener("click", changeFridayText);
 let normal = true;
 function changeFridayText() {
-  if(normal === true) {
+  if(normal) {
 for(let index of friday) {
     index.innerText = "It's Friday";
     normal = false;
@@ -147,7 +147,7 @@ let paint = document.getElementById("days");
 paint.addEventListener("click", addColor);
 let actual = false;
 function addColor(event) {
-  if(actual === false) {
+  if(selected) {
 event.target.style.color = myColor.style.backgroundColor;
     actual = true;
 } else {
