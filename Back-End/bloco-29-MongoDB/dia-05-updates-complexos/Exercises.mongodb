@@ -133,4 +133,4 @@ db.movies.updateOne(
   },
 );
 
-db.movies.find();
+db.movies.countDocuments();
