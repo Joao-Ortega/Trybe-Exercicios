@@ -1,0 +1,13 @@
+use model_example;
+
+db.books.insertMany([
+  { "title": "A Game of Thrones", "author": "George R. R. Martin" },
+  { "title": "A Clash of Kings", "author": "George R. R. Martin" },
+  { "title": "A Storm of Swords", "author": "George R. R. Martin" },
+  { "title": "The Lord of The Rings - The Fellowship of the Ring", "author": "J. R. R. Tolkien" },
+  { "title": "The Lord of The Rings - The Two Towers", "author": "J. R. R. Tolkien" },
+  { "title": "The Lord of The Rings - The Return of The King", "author": "J. R. R. Tolkien" },
+  { "title": "Foundation", "author": "Isaac Asimov" }
+]);
+
+db.books.find();
