@@ -1,26 +1,16 @@
-import random
+def input_sum(input):
+    print(input)
+    sum = 0
+    for number in input:
+        if number.isdigit():
+            sum += int(number)
+        else:
+            print(f"Erro ao somar valores, {number} é um valor inválido")
+    return sum
 
 
-# def vertical_inverted_ladder(word):
-#     for removed_letters in range(len(word)):
-#         for index in range(len(word) - removed_letters):
-#             print(word[index], end="")
-#         print()
-
-
-# vertical_inverted_ladder("PEDRO")
-
-
-def game():
-    words = ["macarrão", "camarão", "caramujo"]
-    random_word = random.choice(words)
-    scrambled_word = "".join(random.sample(random_word, len(random_word)))
-    return {random_word, scrambled_word}
-
-
-correct_word, scrambled = game()
-for chances in range(3):
-    word = input(f"Adivinhe a palavra {scrambled} ")
-    if word == correct_word:
-        print("Congrats")
-        break
+print(
+    input_sum(
+        input("Digite um ou mais números separados por espaços\n").split(" ")
+    )
+)

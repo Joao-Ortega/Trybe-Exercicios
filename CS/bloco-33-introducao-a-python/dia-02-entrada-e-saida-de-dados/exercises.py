@@ -32,7 +32,7 @@
 #         break
 import random
 
-with open("palavras.txt", mode="r") as file:
+with open("palavrasFaceisParaOBreno.txt", mode="r") as file:
     content = file.read()
     lista = content.split("\n")
     pega_uma = random.choice(lista)

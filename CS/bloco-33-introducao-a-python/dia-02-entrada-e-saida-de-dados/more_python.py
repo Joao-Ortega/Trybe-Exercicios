@@ -5,6 +5,7 @@ for letter in name:
 
 
 def input_sum(input):
+    print(input)
     sum = 0
     for number in input:
         if number.isdigit():
