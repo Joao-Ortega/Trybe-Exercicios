@@ -36,3 +36,14 @@ def best_combinations(arr):
 
 
 print(best_combinations([1, 1, 2, 3]))
+
+
+def get_person_time(entrance, exit, time):
+    students_on_time = 0
+    for index, _student_time in enumerate(entrance):
+        if entrance[index] < time < exit[index]:
+            students_on_time += 1
+    return students_on_time
+
+
+print(get_person_time([1, 2, 3], [3, 2, 7], 4))
